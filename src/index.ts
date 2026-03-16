@@ -1,11 +1,11 @@
 import express from 'express';
-import pokemonRoutes from './routes/pokemonRoutes';
 import healthRoutes from "./routes/healthRoutes";
+import exerciseRoutes from './routes/exerciseRoutes';
 
 const app = express();
 
-app.use('/api/pokemon', pokemonRoutes);
 app.use('/api/health', healthRoutes);
+app.use('/api/exercises', exerciseRoutes);
 
 app.listen(3000, () => {
     console.log('Server running on http://localhost:3000');
