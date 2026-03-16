@@ -35,8 +35,8 @@ jobs:
           username: ${{ secrets.EC2_USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            cd ~/cicd-playground
+            cd ~/fitpulse-api
             git pull origin main
             npm install
             npm run build
-            pm2 restart cicd-playground
+            pm2 restart fitpulse-api
