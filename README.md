@@ -5,8 +5,6 @@ Small Express + TypeScript API with sample health, Pokémon, and exercise endpoi
 ## Endpoints
 
 - `GET /api/health`
-- `GET /api/pokemon`
-- `GET /api/pokemon/:id`
 - `GET /api/exercises`
 - `GET /api/exercises?bodyPart=legs`
 - `GET /api/exercises/search?q=cardio`
